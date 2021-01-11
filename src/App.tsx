@@ -1,17 +1,16 @@
 import React from "react";
+import Counter from "./Counter";
 import logo from "./logo.svg";
 import "./App.css";
 
 interface AppProps {
   message?: string;
-  name: string;
 }
 
-const App: React.FC<AppProps> = ({ message, name }) => {
+const App: React.FC<AppProps> = ({ message }) => {
   return (
     <div>
-      {message}
-      {name}
+      <Counter />
     </div>
   );
 };
