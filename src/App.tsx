@@ -1,5 +1,5 @@
 import React from "react";
-import Counter from "./Counter";
+import CounterReducer from "./CounterReducer";
 import logo from "./logo.svg";
 import "./App.css";
 
@@ -10,7 +10,7 @@ interface AppProps {
 const App: React.FC<AppProps> = ({ message }) => {
   return (
     <div>
-      <Counter />
+      <CounterReducer />
     </div>
   );
 };
